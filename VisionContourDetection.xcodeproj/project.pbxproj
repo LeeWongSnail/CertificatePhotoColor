@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		601D31A528896337003D2193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601D31A428896337003D2193 /* AppDelegate.swift */; };
+		601D31A728896337003D2193 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601D31A628896337003D2193 /* SceneDelegate.swift */; };
+		601D31A928896337003D2193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601D31A828896337003D2193 /* ViewController.swift */; };
+		601D31AC28896337003D2193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601D31AA28896337003D2193 /* Main.storyboard */; };
+		601D31AE28896339003D2193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601D31AD28896339003D2193 /* Assets.xcassets */; };
+		601D31B128896339003D2193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601D31AF28896339003D2193 /* LaunchScreen.storyboard */; };
+		601D31BA2889639E003D2193 /* ContourDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601D31B92889639E003D2193 /* ContourDetection.swift */; };
+		601D31D3288E8C52003D2193 /* CropImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 601D31D2288E8C52003D2193 /* CropImageManager.m */; };
+		601D31D9288E96B7003D2193 /* CIColorInvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601D31D6288E96B7003D2193 /* CIColorInvert.swift */; };
+		601D31DA288E96B7003D2193 /* CubeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 601D31D7288E96B7003D2193 /* CubeMap.c */; };
+		601D31E1288FE7BD003D2193 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601D31E0288FE7BD003D2193 /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		601D31A128896337003D2193 /* VisionContourDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionContourDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		601D31A428896337003D2193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		601D31A628896337003D2193 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		601D31A828896337003D2193 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		601D31AB28896337003D2193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		601D31AD28896339003D2193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		601D31B028896339003D2193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		601D31B228896339003D2193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		601D31B92889639E003D2193 /* ContourDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContourDetection.swift; sourceTree = "<group>"; };
+		601D31D1288E8C52003D2193 /* CropImageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CropImageManager.h; sourceTree = "<group>"; };
+		601D31D2288E8C52003D2193 /* CropImageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CropImageManager.m; sourceTree = "<group>"; };
+		601D31D5288E9684003D2193 /* VisionContourDetection-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VisionContourDetection-Bridging-Header.h"; sourceTree = "<group>"; };
+		601D31D6288E96B7003D2193 /* CIColorInvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIColorInvert.swift; sourceTree = "<group>"; };
+		601D31D7288E96B7003D2193 /* CubeMap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CubeMap.c; sourceTree = "<group>"; };
+		601D31D8288E96B7003D2193 /* CubeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeMap.h; sourceTree = "<group>"; };
+		601D31E0288FE7BD003D2193 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		601D31E5288FE9C7003D2193 /* VisionContourDetection.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisionContourDetection.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		601D319E28896337003D2193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601D31E1288FE7BD003D2193 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		601D319828896337003D2193 = {
+			isa = PBXGroup;
+			children = (
+				601D31A328896337003D2193 /* VisionContourDetection */,
+				601D31A228896337003D2193 /* Products */,
+				601D31DF288FE7BD003D2193 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		601D31A228896337003D2193 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				601D31A128896337003D2193 /* VisionContourDetection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		601D31A328896337003D2193 /* VisionContourDetection */ = {
+			isa = PBXGroup;
+			children = (
+				601D31D5288E9684003D2193 /* VisionContourDetection-Bridging-Header.h */,
+				601D31D4288E95AA003D2193 /* CoreImage */,
+				601D31B82889638C003D2193 /* ContourDetection */,
+				601D31A428896337003D2193 /* AppDelegate.swift */,
+				601D31A628896337003D2193 /* SceneDelegate.swift */,
+				601D31A828896337003D2193 /* ViewController.swift */,
+				601D31AA28896337003D2193 /* Main.storyboard */,
+				601D31AD28896339003D2193 /* Assets.xcassets */,
+				601D31AF28896339003D2193 /* LaunchScreen.storyboard */,
+				601D31B228896339003D2193 /* Info.plist */,
+				601D31E5288FE9C7003D2193 /* VisionContourDetection.pch */,
+			);
+			path = VisionContourDetection;
+			sourceTree = "<group>";
+		};
+		601D31B82889638C003D2193 /* ContourDetection */ = {
+			isa = PBXGroup;
+			children = (
+				601D31B92889639E003D2193 /* ContourDetection.swift */,
+				601D31D1288E8C52003D2193 /* CropImageManager.h */,
+				601D31D2288E8C52003D2193 /* CropImageManager.m */,
+			);
+			path = ContourDetection;
+			sourceTree = "<group>";
+		};
+		601D31D4288E95AA003D2193 /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				601D31D6288E96B7003D2193 /* CIColorInvert.swift */,
+				601D31D7288E96B7003D2193 /* CubeMap.c */,
+				601D31D8288E96B7003D2193 /* CubeMap.h */,
+			);
+			path = CoreImage;
+			sourceTree = "<group>";
+		};
+		601D31DF288FE7BD003D2193 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				601D31E0288FE7BD003D2193 /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		601D31A028896337003D2193 /* VisionContourDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601D31B528896339003D2193 /* Build configuration list for PBXNativeTarget "VisionContourDetection" */;
+			buildPhases = (
+				601D319D28896337003D2193 /* Sources */,
+				601D319E28896337003D2193 /* Frameworks */,
+				601D319F28896337003D2193 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisionContourDetection;
+			productName = VisionContourDetection;
+			productReference = 601D31A128896337003D2193 /* VisionContourDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		601D319928896337003D2193 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					601D31A028896337003D2193 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+				};
+			};
+			buildConfigurationList = 601D319C28896337003D2193 /* Build configuration list for PBXProject "VisionContourDetection" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 601D319828896337003D2193;
+			productRefGroup = 601D31A228896337003D2193 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				601D31A028896337003D2193 /* VisionContourDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		601D319F28896337003D2193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601D31B128896339003D2193 /* LaunchScreen.storyboard in Resources */,
+				601D31AE28896339003D2193 /* Assets.xcassets in Resources */,
+				601D31AC28896337003D2193 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		601D319D28896337003D2193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601D31DA288E96B7003D2193 /* CubeMap.c in Sources */,
+				601D31A928896337003D2193 /* ViewController.swift in Sources */,
+				601D31A528896337003D2193 /* AppDelegate.swift in Sources */,
+				601D31BA2889639E003D2193 /* ContourDetection.swift in Sources */,
+				601D31D3288E8C52003D2193 /* CropImageManager.m in Sources */,
+				601D31A728896337003D2193 /* SceneDelegate.swift in Sources */,
+				601D31D9288E96B7003D2193 /* CIColorInvert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		601D31AA28896337003D2193 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601D31AB28896337003D2193 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		601D31AF28896339003D2193 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601D31B028896339003D2193 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		601D31B328896339003D2193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		601D31B428896339003D2193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		601D31B628896339003D2193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7355HRC9G6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VisionContourDetection/OpenCV",
+				);
+				GCC_PREFIX_HEADER = /Users/LeeWong/Documents/Code/Project/VisionContourDetection/VisionContourDetection/VisionContourDetection.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisionContourDetection/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinxiang.VisionContourDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VisionContourDetection/VisionContourDetection-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		601D31B728896339003D2193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7355HRC9G6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VisionContourDetection/OpenCV",
+				);
+				GCC_PREFIX_HEADER = /Users/LeeWong/Documents/Code/Project/VisionContourDetection/VisionContourDetection/VisionContourDetection.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisionContourDetection/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinxiang.VisionContourDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VisionContourDetection/VisionContourDetection-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		601D319C28896337003D2193 /* Build configuration list for PBXProject "VisionContourDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601D31B328896339003D2193 /* Debug */,
+				601D31B428896339003D2193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601D31B528896339003D2193 /* Build configuration list for PBXNativeTarget "VisionContourDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601D31B628896339003D2193 /* Debug */,
+				601D31B728896339003D2193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 601D319928896337003D2193 /* Project object */;
+}
